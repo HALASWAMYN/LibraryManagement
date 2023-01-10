@@ -1,0 +1,59 @@
+body {
+    /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'); */
+    background-size: cover;
+}
+
+.landingpage {
+    padding: 50px 0px;
+    background-color: white;
+    margin: auto;
+    margin-top: 120px;
+    height: 300px;
+    width: 800px;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px;
+}
+
+.login1 {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    padding: 5px 15px;
+}
+
+.bt1 {
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+}
+
+.bt2 {
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: green;
+}
+
+/* .btn{
+    display: flex;
+    justify-content:space-around;
+    padding: 15px;
+    text-decoration: none;
+    
+} */
+/* .img{
+    display: flex;
+    justify-content:space-around;
+} */
+/* button{
+ 
+    border: 2px solid green;
+    border-radius: 5px;
+    text-decoration: none;
+} */

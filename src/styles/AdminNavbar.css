@@ -1,0 +1,29 @@
+.adminNavbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:blue;
+    
+}
+.middle_lkink li{
+display: inline-block;
+padding: 0px 15px;
+}
+.middle_lkink a{
+    color: white;
+    text-decoration: none;
+}
+
+.left_link h1{
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+.right_link a{
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+.App{
+    margin: 0px;
+}

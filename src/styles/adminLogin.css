@@ -1,0 +1,38 @@
+.adminLogin{
+ 
+    background-color:bisque;
+    height:360px;
+    width: 400px;
+    margin: 0pc 500px;
+}
+.App{
+      margin-top: 100px;
+     align-items: center;
+}
+.form_container_card h1{
+    padding-top: 20px;
+}
+.log1{
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.log2{
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+input{
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    width: 250px;
+}
+.form_container_card{
+    margin-top: 150px;
+}
