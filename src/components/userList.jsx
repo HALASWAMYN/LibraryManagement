@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import ReadUser from "./readUser";
 
 const UserList = () => {
@@ -12,7 +12,7 @@ const UserList = () => {
             setUser(data)
         }
         fetchData()
-    }, [])
+    },[user])
     let handleDelete = (id, name) => {
         fetch(`http://localhost:4018/users/${id}`, {
             method: 'DELETE'

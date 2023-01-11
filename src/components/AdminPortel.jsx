@@ -6,6 +6,7 @@ import UserList from "./userList";
 import ReadBook from "./readBook";
 import AddBook from "./addBook";
 import AddUser from "./addUser";
+import ReadUser from "./readUser";
 
 const AdminPortel = () => { 
     return ( 

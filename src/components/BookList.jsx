@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ReadBook from "./readBook";
+import { useLocation } from "react-router-dom";
 
 
 const BookList = () => {
@@ -23,9 +24,20 @@ const BookList = () => {
         alert(`${title} has been deleted permanently`)
     }
     let navigate = useNavigate()
+
     let read = (id) => {
-        navigate (`/admin/book-List/${id}`)
+        if(location.pathname=='/admin/book-List')
+        {
+            navigate(`/admin/book-List/${id}`)
+        }
+        else{
+            navigate(`/user/book-List/${id}`)
+        }
+        
     }
+    //to fetch the route variable
+    let location=useLocation()
+
     return (
         <div className="bookList">
             <h1>Book List: {books.length}</h1>
@@ -44,7 +56,8 @@ const BookList = () => {
                             <p> <b>Category:</b>{data.categories}</p>
                             <p><b>pageCount:</b> {data.pageCount}</p>
                             <button style={{ backgroundColor: 'white', color: 'blue', borderRadius: '5px', border: '1px solid blue', marginBottom: '5px', marginRight: '5px' }} onClick={() => read(data.id)}>Read More</button>
-                            <button style={{ backgroundColor: 'red', color: 'white', borderRadius: '5px', border: '0', marginBottom: '5px' }} onClick={() => handleDelete(data.id, data.title)}>Delete</button>
+                            { location.pathname=='/admin/book-List' && <button style={{ backgroundColor: 'red', color: 'white', borderRadius: '5px', border: '0', marginBottom: '5px' }} onClick={() => handleDelete(data.id, data.title)}>Delete</button>}
+                        
                         </div>
                     </div>
 
