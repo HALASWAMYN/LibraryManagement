@@ -13,6 +13,7 @@ const UserList = () => {
         }
         fetchData()
     },[user])
+    
     let handleDelete = (id, name) => {
         fetch(`http://localhost:4018/users/${id}`, {
             method: 'DELETE'
@@ -20,13 +21,13 @@ const UserList = () => {
         alert(`${name} has been deleted permanently`)
     }
     let navigate = useNavigate()
-    let read = (id) => {
-        navigate(`/admin/user-list/${id}`)
-    }
+    // let read = (id) => {
+    //     navigate(`/admin/user-list/${id}`)
+    // }
 
     return (
         <div className="userList">
-            <h1>User List:{user.length}</h1>
+            <h1 style={{marginTop:'100px'}}>User List:{user.length}</h1>
 
             <div className="user_section">
                 {user.map(data => (
@@ -35,7 +36,7 @@ const UserList = () => {
                         <p><b>Age:</b> {data.age}</p>
                         <p><b>Email:</b> {data.email}</p>
                         <p><b>phoneNumber:</b> {data.phoneNumber}</p>
-                        <button style={{ backgroundColor: 'white', color: 'blue', borderRadius: '5px', border: '1px solid blue', marginBottom: '5px', marginRight: '5px' }} onClick={() => read(data.id)}>Read More</button>
+                        {/* <button style={{ backgroundColor: 'white', color: 'blue', borderRadius: '5px', border: '1px solid blue', marginBottom: '5px', marginRight: '5px' }} onClick={() => read(data.id)}>Read More</button> */}
                         <button style={{ backgroundColor: 'red', color: 'white', borderRadius: '5px', border: '0', marginBottom: '5px' }} onClick={() => handleDelete(data.id, data.name)}>Delete</button>
 
 

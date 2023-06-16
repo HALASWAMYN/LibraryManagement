@@ -24,9 +24,9 @@ const AddUser = () => {
     }
     return ( 
         <div className="addUser">
-            <h1>Add a New User</h1>
-            <div className="form" onSubmit={handleSubmit}>
-                <form action="">
+            <h1 style={{marginTop:'100px'}}>Add a New User</h1>
+            <div style={{backgroundColor:'burlywood',padding:'20px',margin:'0px 500px',borderRadius:'9px'}} className="forn" >
+                <form action="" onSubmit={handleSubmit} >
                     <div className="name">
                         <input type="text" placeholder="enter name" required value={name} onChange={(e)=>setName(e.target.value)} />
                     </div>
@@ -39,7 +39,8 @@ const AddUser = () => {
                     <div className="phone">
                         <input type="tel" minLength={10} maxLength={10} required placeholder='enter phone Number' value={phone} onChange={(e)=>setPhone(e.target.value)} />
                     </div>
-                    <button>Add User</button>
+                    <br />
+                    <button className="log1">Add User</button>
                 </form>
             </div>
         </div>

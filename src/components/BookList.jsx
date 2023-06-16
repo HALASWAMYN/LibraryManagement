@@ -40,7 +40,7 @@ const BookList = () => {
 
     return (
         <div className="bookList">
-            <h1>Book List: {books.length}</h1>
+            <h1 style={{marginTop:'100px'}}>Book List: {books.length}</h1>
 
             <div className="book_section">
                 {books.map(data => (

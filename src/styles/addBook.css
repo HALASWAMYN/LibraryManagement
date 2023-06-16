@@ -1,0 +1,18 @@
+input{
+    border-bottom: 2px solid black;
+    /* border: 1px solid blue ; */
+    margin: 2px;
+    border-radius: 5px;
+}
+textarea{
+    border: 1px solid blue ;
+    margin: 2px;
+    border-radius: 5px;
+
+}
+.form{
+    background-color: burlywood;
+    padding: 20px;
+    margin: 0px 400px;
+    border-radius: 9px;
+}

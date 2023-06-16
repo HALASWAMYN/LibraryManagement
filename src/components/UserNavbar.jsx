@@ -5,7 +5,7 @@ const UserNavbar = () => {
 
         <div className="adminNavbar">
             <div className="left_link">
-                <h1>Admin Portel</h1>
+                <h1>User Portel</h1>
             </div>
 
             <div className="middle_lkink">
